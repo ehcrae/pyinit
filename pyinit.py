@@ -2,21 +2,27 @@ import os
 import argparse
 
 # set up parser
-parser = argparse.ArgumentParser(prog='pyinit', description='set up a project folder')
+parser = argparse.ArgumentParser(prog='pyinit', description='create a project folder')
 
-# parent dir
-parent = '/Users/archie/repos/'
+parser.add_argument('c', help='create a new directory here')
 
-# create a folder in Users/archie/repos/
-parser.add_argument('d', help = 'create a new directory here')
+
+parser.add_argument('-p', '--parent', help='change the parent directory') # as this is an optional arg, add it last
 
 # parse arguments after creating them
 args = parser.parse_args()
 
 def main():
-    child = parent + args.d # created with args, must come after parsing.
+    parent = '/Users/archie/repos/'
+    
+    if args.parent:
+        parent = args.parent
 
-    print(child)
+    child = parent + args.c # must come after parse_args
+    
+    print('created '+ child)
+
+    os.mkdir(child)
 
 if __name__ == "__main__":
     main()

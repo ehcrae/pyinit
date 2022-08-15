@@ -1,1 +1,1 @@
-website = ['index.html', 'styles.css', 'index.js']
+website = ['index.html', 'index.css', 'index.js']

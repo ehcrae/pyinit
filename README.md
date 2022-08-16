@@ -2,8 +2,10 @@
 lazily create a folder from a parent directory
 
 ## future features
-- [ ] template for languages
-  - [ ] website
+- [x] template for languages
+  - [x] website
   - [ ] rust
-  - [ ] arduino project
+  - [x] arduino project
+  - [ ] ???
+- [ ] insert boilerplate
 - [ ] git functionality

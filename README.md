@@ -7,5 +7,7 @@ lazily create a folder from a parent directory
   - [ ] rust
   - [x] arduino project
   - [ ] ???
+- [ ] templates for editors
+  - [x] visual studio code
 - [ ] insert boilerplate
 - [ ] git functionality

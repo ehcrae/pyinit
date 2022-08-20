@@ -39,6 +39,6 @@ def main():
         readme = child + '/README.md'
         open(readme, 'a')
 
-    print('\ncode '+child+'\n')
+    print('\ncd '+child+' | code '+child+'\n')
 if __name__ == "__main__":
     main()
